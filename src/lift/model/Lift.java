@@ -4,7 +4,6 @@ import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.scene.control.Label;
 import javafx.scene.paint.Color;
-import javafx.scene.paint.Paint;
 import javafx.scene.shape.Polygon;
 import javafx.scene.shape.Rectangle;
 import lift.model.customer.Customer;
@@ -139,7 +138,7 @@ public class Lift {
     /**
      * 乘客进入电梯方法
      * @param floor
-     * @return
+     * @return boolean
      */
     public boolean inLift(Floor floor){
         if(customerNumber.get()<=MAX_BEARING){
